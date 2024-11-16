@@ -16,7 +16,7 @@ router = APIRouter(prefix="/purpose_of_payment")
 async def get_purpose_of_payment(
         payment: str,
         purposer: FromDishka[PurposerInterface]
-) -> dict[str, PurposeEnum]:
+) -> PurposeEnum:
     match(await purposer.get(payment=payment)):
-        case Ok(v):  return JSONResponse(status_code=200, content={"label": v})
+        case Ok(v):  return v
         case Err(e): raise HTTPException(status_code=422, detail=e)
