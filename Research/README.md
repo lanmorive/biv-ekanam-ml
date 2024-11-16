@@ -45,7 +45,7 @@ def clean_text(text: str) -> str:
 |---|---|---|
 |NBC + TF-IDF| - | - |
 |FastText| - | - |
-|biGRU| 0.9983 | 5.943e-05 |
+|biGRU| 0.9983 | 0.000059 |
 |RuBERT| - | - |
 
 И с интервальной оценкой ROC-AUC построили распределения:
