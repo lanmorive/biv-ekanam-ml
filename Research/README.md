@@ -33,5 +33,5 @@ def clean_text(text: str) -> str:
 
 Модель показала хорошие изначальные показатели:
 
-- `Accuracy` = 0.91
-- `F1-Score` = 0.913
+- `Accuracy` = 0.875
+- `F1-Score` = 0.84
