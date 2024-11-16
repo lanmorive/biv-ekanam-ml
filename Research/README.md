@@ -33,7 +33,7 @@ def clean_text(text: str) -> str:
 |Название модели|Accuracy|F1-Score|
 |---|---|---|
 |NBC + TF-IDF|0.875|0.84|
-|FastText| - | - |
+|FastText| 0.97 | 0.97 |
 |biGRU| - | - |
 |RuBERT| - | - |
 
