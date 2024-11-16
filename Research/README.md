@@ -33,7 +33,7 @@ def clean_text(text: str) -> str:
 |Название модели|Accuracy|F1-Score|
 |---|---|---|
 |NBC + TF-IDF|0.875|0.84|
-|FastText| 0.97 | 0.97 |
+|FastText| 0.97 | 0.98 |
 |biGRU| - | - |
 |RuBERT| - | - |
 
@@ -45,7 +45,7 @@ def clean_text(text: str) -> str:
 |---|---|---|
 |NBC + TF-IDF| - | - |
 |FastText| - | - |
-|biGRU| - | - |
+|biGRU| 0.9983 | 5.943713037534548e-05 |
 |RuBERT| - | - |
 
 И с интервальной оценкой ROC-AUC построили распределения:
