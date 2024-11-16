@@ -1,0 +1,145 @@
+@font-face { 
+    font-family: "Unbounded"; 
+    src: url("./fonts/Unbounded.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Unbounded";
+}
+
+:root {
+    --blue: #4686FE;
+    --gray: #787878;
+    --white: #fcfcfc;
+    --black: #0e0e0e;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: var(--blue);
+    background: radial-gradient(circle, var(--blue) 0%, var(--white) 70%);
+    justify-content: space-around;
+    padding: 5vh 20%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+    height: 8vh;
+}
+
+.logo-image {
+    width: 6em;
+    padding: 0 0;
+}
+
+.pay-classification {
+    color: var(--black);
+    font-size: 2em;
+}
+
+.team-name {
+    color: var(--gray);
+}
+
+.form-wrapper {
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px var(--gray);
+    padding: 10% 5%;
+    border-radius: 20px;
+    width: 100%;
+    background: var(--white);
+    background: linear-gradient(90deg, var(--white) 0%, var(--blue) 60%);
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.top-part-form {
+    width: 100%;
+    display: flex;
+    justify-self: space-between;
+    gap: 10%;
+}
+
+.bottom-part-form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.output-data {
+    width: 75%;
+}
+
+.input-value-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-and-btn {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-value-wrapper h3 {
+    color: var(--black);
+}
+
+.input-and-btn input {
+    width: 100%;
+    height: 3em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--gray);
+    outline: none;
+    padding: 10px 10px;
+    background: var(--white);
+}
+
+.enter-btn {
+    display: inline-block;
+    background: var(--blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.enter-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 3px var(--gray);
+}
+
+.enter-btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
