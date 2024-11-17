@@ -38,4 +38,4 @@ def get_label(text):
 
 result = df[['id', 'text']]
 result['text'] = result['text'].apply(get_label)
-result.to_csv('payment_predict.tsv', header=False, index=False)
+result.to_csv('/app/payment_predict.tsv', header=False, index=False)

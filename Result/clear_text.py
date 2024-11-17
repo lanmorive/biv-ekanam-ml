@@ -1,4 +1,5 @@
 import re
+import nltk
 import string
 
 from nltk.corpus import stopwords
@@ -6,6 +7,8 @@ from nltk.tokenize import word_tokenize
 from natasha import Doc, Segmenter, MorphVocab
 from natasha import NewsEmbedding, NewsMorphTagger
 
+nltk.download('stopwords')
+nltk.download('punkt_tab')
 
 # Инициализация компонентов Natasha
 segmenter = Segmenter()
