@@ -7,7 +7,8 @@ _Команда: ekanam_
 
 Для разметки датасета нужно клонировать репозиторий и запустить контейнер:
 ```shell
-docker build ./Result
+docker build -t ekanam .
+docker run -v $(pwd):/app ekanam
 ```
 После чего в его директории появится файл `payment_predict.tsv`
 
