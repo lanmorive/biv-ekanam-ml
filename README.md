@@ -7,7 +7,7 @@ _Команда: ekanam_
 
 Для разметки датасета нужно клонировать репозиторий и запустить контейнер:
 ```shell
-docker build ./Backend
+docker build ./Result
 ```
 После чего в его директории появится файл `result_dataset.tbl`
 
